@@ -12,11 +12,11 @@ with open("README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
 
 setup(
-    name='dh_common',
-    version='0.0.1',
+    name='common_tool',
+    version='0.0.2',
     author='donghao',
     author_email=AUTHOR_EMAIL,
-    url="https://pypi.org/project/dh-common/",
+    url="https://github.com/RelaxedDong/dh_common",
     description='Basic toolkit packaging',
     packages=find_packages(),
     install_requires=['six>=1.15.0'],
