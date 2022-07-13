@@ -16,8 +16,8 @@ setup(
     version='0.0.1',
     author='donghao',
     author_email=AUTHOR_EMAIL,
-    url='https://github.com/RelaxedDong',
-    description=u'通用包',
+    url="https://pypi.org/project/dh-common/",
+    description='Basic toolkit packaging',
     packages=find_packages(),
     install_requires=['six>=1.15.0'],
     long_description=long_description,  # 项目的描述 读取README.md文件的信息
