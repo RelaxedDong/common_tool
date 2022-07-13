@@ -13,7 +13,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
 
 setup(
     name='common_tool',
-    version='0.0.2',
+    version='0.0.3',
     author='donghao',
     author_email=AUTHOR_EMAIL,
     url="https://github.com/RelaxedDong/dh_common",
