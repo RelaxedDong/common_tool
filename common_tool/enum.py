@@ -125,3 +125,7 @@ class EnumBase(object):
     def __iter__(self):
         # 当作为django.forms.fields.MultipleChoiceField的choices 要求实例可迭代
         return iter(self.choices)
+
+    @classmethod
+    def build_verbose_value(cls):
+        return [{"verbose": item[1], "value": item[0]} for item in cls]
