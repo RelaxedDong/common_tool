@@ -129,3 +129,9 @@ class EnumBase(object):
     @classmethod
     def build_verbose_value(cls):
         return [{"verbose": item[1], "value": item[0]} for item in cls]
+
+    @classmethod
+    def get_choices(cls, choices_values=None):
+        if choices_values is None:
+            return cls.choices
+        return [choice for choice in cls.choices if choice[0] in choices_values]

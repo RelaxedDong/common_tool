@@ -21,3 +21,9 @@ def str_to_datetime(date_str, date_format=FORMAT_DATETIME, process_none=False):
         return None
     date = datetime.datetime.strptime(date_str, date_format)
     return date
+
+
+def calculate_days(start_time, end_time):
+    start_datetime = start_time.replace(hour=0, minute=0, second=0, microsecond=0)
+    end_datetime = end_time.replace(hour=0, minute=0, second=0, microsecond=0)
+    return (end_datetime - start_datetime).days
