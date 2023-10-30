@@ -1,7 +1,12 @@
 import datetime
 
-FORMAT_DATETIME = u'%Y-%m-%d %H:%M:%S'
-FORMAT_DATE = u'%Y-%m-%d'
+FORMAT_TIME = '%H:%M:%S'
+FORMAT_DATETIME = '%Y-%m-%d %H:%M:%S'
+
+FORMAT_DATE = '%Y-%m-%d'
+FORMAT_SLASH_DATE = '%Y/%m/%d'
+FORMAT_NO_YEAR_DATE = '%m-%d'
+FORMAT_SLASH_NO_YEAR_DATE = '%m/%d'
 
 
 def datetime_to_str(date, date_format=FORMAT_DATETIME, process_none=False):
